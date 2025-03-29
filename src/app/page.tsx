@@ -6,7 +6,6 @@ import {
   Container,
   Grid,
   Typography,
-  Card,
   useTheme,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";

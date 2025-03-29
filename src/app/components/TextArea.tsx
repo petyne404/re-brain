@@ -101,7 +101,7 @@ export default function TextArea({ value, onChange }: TextAreaType) {
           rows={10}
           defaultValue="Default Value"
           value={value}
-          onChange={onChange}
+          onChange={(event) => onChange(event.target.value)}
         />
       </ThemeProvider>
     </Box>

@@ -1,14 +1,6 @@
 "use client";
 import TextArea from "@/app/components/TextArea";
-import { theme } from "@/app/theme";
-import {
-  alpha,
-  Box,
-  Container,
-  Typography,
-  Button,
-  IconButton,
-} from "@mui/material";
+import { alpha, Box, Container, Typography, Button } from "@mui/material";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
 import React, { useState, useEffect } from "react";
 
@@ -17,7 +9,7 @@ interface KeyboardMapping {
   [key: string]: string;
 }
 
-type ConversionDirection = 'thai' | 'english' | null;
+type ConversionDirection = "thai" | "english" | null;
 
 // Update BoxStyled component with proper types
 interface BoxStyledProps {
@@ -34,11 +26,11 @@ const BoxStyled: React.FC<BoxStyledProps> = ({ children }) => {
           ${alpha(theme.palette.grey[400], 0.1)}
         )`,
         padding: 2,
-        width: '50%',
+        width: "50%",
         borderRadius: 2,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 2
+        display: "flex",
+        flexDirection: "column",
+        gap: 2,
       }}
     >
       {children}
@@ -157,7 +149,7 @@ const EN_TO_TH: KeyboardMapping = Object.fromEntries(
 );
 
 // Function to detect language
-const detectLanguage = (text: string): 'thai' | 'english' => {
+const detectLanguage = (text: string): "thai" | "english" => {
   let thaiCount = 0;
   let englishCount = 0;
 
@@ -171,7 +163,7 @@ const detectLanguage = (text: string): 'thai' | 'english' => {
     }
   }
 
-  return thaiCount > englishCount ? 'thai' : 'english';
+  return thaiCount > englishCount ? "thai" : "english";
 };
 
 // Function to convert text
@@ -200,7 +192,8 @@ const Page = () => {
   const [inputText, setInputText] = useState<string>("");
   const [outputText, setOutputText] = useState<string>("");
   const [autoConvert, setAutoConvert] = useState<boolean>(true);
-  const [conversionDirection, setConversionDirection] = useState<ConversionDirection>(null);
+  const [conversionDirection, setConversionDirection] =
+    useState<ConversionDirection>(null);
 
   // Handle input change and auto conversion
   useEffect(() => {
@@ -257,11 +250,11 @@ const Page = () => {
           Thai-English Keyboard Layout Converter
         </Typography>
         <Typography>
-          Ever started typing a message only to realize it's in the wrong
+          Ever started typing a message only to realize it&apos;s in the wrong
           language? The language converter feature helps prevent this by
           allowing users to quickly switch between languages on their keyboard.
-          Whether you're typing in English or Thai, this feature ensures your
-          text appears just as you intended.
+          Whether you&apos;re typing in English or Thai, this feature ensures
+          your text appears just as you intended.
         </Typography>
         <Button
           variant="outlined"
@@ -299,7 +292,7 @@ const Page = () => {
           <TextArea
             title="input"
             value={inputText}
-            onChange={(e) => setInputText(e.target.value)}
+            onChange={(value: string) => setInputText(value)}
           />
           {!autoConvert && (
             <Button
@@ -318,7 +311,7 @@ const Page = () => {
           <TextArea
             title="output"
             value={outputText}
-            onChange={(e) => setOutputText(e.target.value)}
+            onChange={(value: string) => setInputText(value)}
           />
           <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
             <Button

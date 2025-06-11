@@ -5,7 +5,7 @@ import { theme } from "../theme";
 
 const Feature = () => {
   return (
-    <Box sx={{ py: 2, bgcolor: "background.default" }}>
+    <Box id="Features" sx={{ py: 2, bgcolor: "background.default" }}>
       <Container maxWidth="lg">
         <Typography
           variant="h2"

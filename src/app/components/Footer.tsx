@@ -66,10 +66,10 @@ const FooterTitle = styled(Typography)(({ theme }) => ({
 
 export default function Footer() {
   const footerLinks = {
-    Product: ["Features", "Pricing", "Documentation", "Updates"],
-    Company: ["About", "Blog", "Careers", "Contact"],
-    Resources: ["Community", "Help Center", "Support", "Status"],
-    Legal: ["Privacy", "Terms", "Security", "Cookies"],
+    // Product: ["Features", "Pricing", "Documentation", "Updates"],
+    // Company: ["About", "Blog", "Careers", "Contact"],
+    // Resources: ["Community", "Help Center", "Support", "Status"],
+    // Legal: ["Privacy", "Terms", "Security", "Cookies"],
   };
 
   return (
@@ -91,23 +91,23 @@ export default function Footer() {
               variant="body2"
               sx={{ color: "grey.400", mb: 2, maxWidth: 300 }}
             >
-              Empowering developers with AI-powered solutions for smarter,
-              faster coding.
+              Let's make your life easier with ReBrain
             </Typography>
             <Stack direction="row" spacing={1}>
               <SocialButton aria-label="github">
-                <GitHubIcon />
-              </SocialButton>
-              <SocialButton aria-label="twitter">
-                <TwitterIcon />
+                <Link href="https://github.com/petyne404" target="_blank">
+                  <GitHubIcon />
+                </Link>
               </SocialButton>
               <SocialButton aria-label="linkedin">
-                <LinkedInIcon />
+                <Link href="https://www.linkedin.com/in/tharathepnoe/" target="_blank">
+                  <LinkedInIcon />
+                </Link>
               </SocialButton>
             </Stack>
           </Grid>
 
-          {Object.entries(footerLinks).map(([category, links]) => (
+          {/* {Object.entries(footerLinks).map(([category, links]) => (
             <Grid item xs={6} sm={3} md={2} key={category}>
               <FooterTitle variant="subtitle2">{category}</FooterTitle>
               <Stack spacing={1.5}>
@@ -122,7 +122,7 @@ export default function Footer() {
                 ))}
               </Stack>
             </Grid>
-          ))}
+          ))} */}
         </Grid>
 
         <Box

@@ -7,12 +7,11 @@ import {
   Typography,
   Stack,
   IconButton,
-  Link as MuiLink,
+  // Link as MuiLink,
 } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 import Link from "next/link";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Image from "next/image";
 
@@ -38,14 +37,14 @@ const FooterWrapper = styled(Box)(({ theme }) => ({
   },
 }));
 
-const FooterLink = styled(MuiLink)(({ theme }) => ({
-  color: theme.palette.grey[400],
-  textDecoration: "none",
-  transition: "color 0.2s ease-in-out",
-  "&:hover": {
-    color: theme.palette.grey[100],
-  },
-}));
+// const FooterLink = styled(MuiLink)(({ theme }) => ({
+//   color: theme.palette.grey[400],
+//   textDecoration: "none",
+//   transition: "color 0.2s ease-in-out",
+//   "&:hover": {
+//     color: theme.palette.grey[100],
+//   },
+// }));
 
 const SocialButton = styled(IconButton)(({ theme }) => ({
   color: theme.palette.grey[400],
@@ -57,27 +56,27 @@ const SocialButton = styled(IconButton)(({ theme }) => ({
   },
 }));
 
-const FooterTitle = styled(Typography)(({ theme }) => ({
-  color: theme.palette.grey[100],
-  fontWeight: 600,
-  marginBottom: theme.spacing(2),
-  fontFamily: "JetBrains Mono, monospace",
-}));
+// const FooterTitle = styled(Typography)(({ theme }) => ({
+//   color: theme.palette.grey[100],
+//   fontWeight: 600,
+//   marginBottom: theme.spacing(2),
+//   fontFamily: "JetBrains Mono, monospace",
+// }));
 
 export default function Footer() {
-  const footerLinks = {
-    // Product: ["Features", "Pricing", "Documentation", "Updates"],
-    // Company: ["About", "Blog", "Careers", "Contact"],
-    // Resources: ["Community", "Help Center", "Support", "Status"],
-    // Legal: ["Privacy", "Terms", "Security", "Cookies"],
-  };
+  // const footerLinks = {
+  //   Product: ["Features", "Pricing", "Documentation", "Updates"],
+  //   Company: ["About", "Blog", "Careers", "Contact"],
+  //   Resources: ["Community", "Help Center", "Support", "Status"],
+  //   Legal: ["Privacy", "Terms", "Security", "Cookies"],
+  // };
 
   return (
     <FooterWrapper>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
-            <Box >
+          <Grid size={{ xs: 12, md: 4 }}>
+            <Box>
               <Link href="/">
                 <Image
                   src="/images/logo/logo.svg"
@@ -91,7 +90,7 @@ export default function Footer() {
               variant="body2"
               sx={{ color: "grey.400", mb: 2, maxWidth: 300 }}
             >
-              Let's make your life easier with ReBrain
+              Let&apos;s make your life easier with ReBrain
             </Typography>
             <Stack direction="row" spacing={1}>
               <SocialButton aria-label="github">
@@ -100,7 +99,10 @@ export default function Footer() {
                 </Link>
               </SocialButton>
               <SocialButton aria-label="linkedin">
-                <Link href="https://www.linkedin.com/in/tharathepnoe/" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/tharathepnoe/"
+                  target="_blank"
+                >
                   <LinkedInIcon />
                 </Link>
               </SocialButton>

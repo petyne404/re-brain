@@ -1,13 +1,11 @@
 "use client";
 import TextArea from "@/app/components/TextArea";
-import { theme } from "@/app/theme";
 import {
   alpha,
   Box,
   Container,
   Typography,
   Button,
-  IconButton,
 } from "@mui/material";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
 import React, { useState, useEffect } from "react";

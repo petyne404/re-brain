@@ -81,7 +81,7 @@ const customTheme = (outerTheme: Theme) =>
 interface TextAreaType {
   title: string;
   value: string;
-  onChange: (value: any) => void;
+  onChange: (value: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function TextArea({ value, onChange }: TextAreaType) {

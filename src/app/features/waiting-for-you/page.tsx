@@ -1,12 +1,8 @@
 "use client";
 import { Box, Container, Typography } from "@mui/material";
-import React, { useState, useEffect } from "react";
 import DatePicker from "@/app/components/DatePicker";
 import EmojiReunion from "@/app/components/EmojiReunion/EmojiReunion";
 
-interface BoxStyledProps {
-  children: React.ReactNode;
-}
 
 const page = () => {
   return (
@@ -97,7 +93,7 @@ const page = () => {
             a better future — the waiting never gets easier. The silence, the
             empty spaces, the longing… it all adds up. But so does every moment
             you wait — every second is proof of love that endures distance and
-            time. "Waiting for You" isn&apos;t just a countdown timer. It&apos;s
+            time. `&quot;Waiting for You`&quot; isn&apos;t just a countdown timer. It&apos;s
             a space to hold your heart still, to give the wait a shape. Pick a
             date, set a time — and let the seconds gently remind you:
             they&apos;re coming back. And you&apos;re getting closer, every

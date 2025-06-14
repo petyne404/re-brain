@@ -27,10 +27,10 @@ const Feature = () => {
               href: "/features/lang-converter",
             },
             {
-              title: "Food Roulette",
+              title: "Waiting for you",
               description:
-                "Let us take the guesswork out of mealtime. enjoy your next meal stress-free! 🍽🎉",
-                href: "",
+                "Have you ever waited for someone? ❤️🎉",
+              href: "/features/waiting-for-you",
             },
             {
               title: "Coming soon",
@@ -38,7 +38,7 @@ const Feature = () => {
               href: "",
             },
           ].map((feature, index) => (
-            <Grid item xs={12} md={4} key={index}>
+            <Grid  key={index} size={{ xs: 12, md: 4 }}>
               <StyledBox
                 title={feature.title}
                 description={feature.description}

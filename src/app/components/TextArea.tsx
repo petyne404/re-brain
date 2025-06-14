@@ -81,7 +81,7 @@ const customTheme = (outerTheme: Theme) =>
 interface TextAreaType {
   title: string;
   value: string;
-  onChange: (value: string) => void;
+  onChange: (value: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function TextArea({ value, onChange }: TextAreaType) {
@@ -101,7 +101,7 @@ export default function TextArea({ value, onChange }: TextAreaType) {
           rows={10}
           defaultValue="Default Value"
           value={value}
-          onChange={(event) => onChange(event.target.value)}
+          onChange={onChange}
         />
       </ThemeProvider>
     </Box>

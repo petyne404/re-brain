@@ -27,7 +27,7 @@ import { alpha, styled } from "@mui/material/styles";
 import Link from "next/link";
 import Image from "next/image";
 
-const pages = ["Home", "Features", "About", "Contact"];
+const pages = ["Home", "Features", "About"];
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   background: alpha(theme.palette.background.default, 0.8),
@@ -186,7 +186,9 @@ export default function Navbar() {
               </Logo>
               <Stack direction="row" spacing={1}>
                 {pages.map((page) => (
-                  <NavButton key={page}>{page}</NavButton>
+                  <Link href={`/#${page}`} key={page}>
+                    <NavButton key={page}>{page}</NavButton>
+                  </Link>
                 ))}
               </Stack>
             </>

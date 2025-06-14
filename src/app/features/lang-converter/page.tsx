@@ -1,6 +1,12 @@
 "use client";
 import TextArea from "@/app/components/TextArea";
-import { alpha, Box, Container, Typography, Button } from "@mui/material";
+import {
+  alpha,
+  Box,
+  Container,
+  Typography,
+  Button,
+} from "@mui/material";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
 import React, { useState, useEffect } from "react";
 
@@ -253,8 +259,8 @@ const Page = () => {
           Ever started typing a message only to realize it&apos;s in the wrong
           language? The language converter feature helps prevent this by
           allowing users to quickly switch between languages on their keyboard.
-          Whether you&apos;re typing in English or Thai, this feature ensures
-          your text appears just as you intended.
+          Whether you&apos;re typing in English or Thai, this feature ensures your
+          text appears just as you intended.
         </Typography>
         <Button
           variant="outlined"
@@ -292,7 +298,7 @@ const Page = () => {
           <TextArea
             title="input"
             value={inputText}
-            onChange={(value: string) => setInputText(value)}
+            onChange={(e) => setInputText(e.target.value)}
           />
           {!autoConvert && (
             <Button
@@ -311,7 +317,7 @@ const Page = () => {
           <TextArea
             title="output"
             value={outputText}
-            onChange={(value: string) => setInputText(value)}
+            onChange={(e) => setOutputText(e.target.value)}
           />
           <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
             <Button

@@ -1,6 +1,7 @@
 "use client"
 import { penalties } from "@/app/constants/bottle-sping";
 import { Box, Button, Container, Modal, Typography } from "@mui/material"
+import Image from "next/image";
 import { useState } from "react"
 
 const style = {
@@ -46,7 +47,7 @@ const Page = () => {
 				ขวดไม่ได้หมุน หัวมึงอ่ะหมุน
 			</Typography>
 			<Box sx={{ my: 10, display: "flex", justifyContent: "center" }}>
-				<img
+				<Image
 					src="/images/green-bottle.png"
 					alt="bottle"
 					style={{

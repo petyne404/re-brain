@@ -1,11 +1,11 @@
 "use client";
 
 import { Box, Container, Grid, Typography } from "@mui/material";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/organisms/Navbar";
 import { TypeAnimation } from "react-type-animation";
-import Footer from "./components/Footer";
-import Feature from "./components/Feature";
-import Aboutus from "./components/Aboutus";
+import Footer from "./components/organisms/Footer";
+import Feature from "./components/organisms/Feature";
+import Aboutus from "./components/organisms/Aboutus";
 
 export default function Home() {
   return (

@@ -8,7 +8,7 @@ import {
   Theme,
   useTheme,
 } from "@mui/material/styles";
-import { theme } from "../theme";
+import { theme } from "../../theme";
 
 const customTheme = (outerTheme: Theme) =>
   createTheme({

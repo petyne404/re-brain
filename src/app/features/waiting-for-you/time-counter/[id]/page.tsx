@@ -1,4 +1,4 @@
-import TimeCounter, { TimeCounterProps } from "@/app/components/TimeCounter";
+import TimeCounter, { TimeCounterProps } from "@/app/components/organisms/TimeCounter";
 import { getTimeCounterById } from "@/lib/backend/timeCounterServices";
 import { Container } from "@mui/material";
 import React from "react";

@@ -1,7 +1,7 @@
 "use client";
 import { Box, Container, Typography } from "@mui/material";
-import DatePicker from "@/app/components/DatePicker";
-import EmojiReunion from "@/app/components/EmojiReunion/EmojiReunion";
+import DatePicker from "@/app/components/atoms/DatePicker";
+import EmojiReunion from "@/app/components/molecules/EmojiReunion/EmojiReunion";
 
 
 const page = () => {

@@ -93,7 +93,7 @@ const Description = styled(Typography)(({ theme }) => ({
 
 interface StyledBoxProps {
   title: string;
-  description: string;
+  description?: string;
   href?: string;
 }
 
@@ -106,7 +106,7 @@ export default function StyledBox({
     <Link href={href} sx={{ textDecoration: "none" }}>
       <CardWrapper>
         <Title variant="h2">{title}</Title>
-        <Description>{description}</Description>
+        {description && <Description>{description}</Description>}
       </CardWrapper>
     </Link>
   );

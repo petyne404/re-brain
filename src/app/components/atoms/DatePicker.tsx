@@ -10,7 +10,7 @@ import {
   Chip,
 } from "@mui/material";
 import { CalendarToday } from "@mui/icons-material";
-import { CardWrapper } from "./StyledBox";
+import { CardWrapper } from "../molecules/StyledBox";
 import SendIcon from "@mui/icons-material/Send";
 import DeleteIcon from "@mui/icons-material/Delete";
 

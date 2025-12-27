@@ -1,5 +1,5 @@
 "use client";
-import TextArea from "@/app/components/TextArea";
+import TextArea from "@/app/components/atoms/TextArea";
 import {
   alpha,
   Box,

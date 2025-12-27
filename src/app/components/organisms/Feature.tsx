@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import StyledBox from "./StyledBox";
-import { theme } from "../theme";
+import StyledBox from "../molecules/StyledBox";
+import { theme } from "../../theme";
 
 const Feature = () => {
   return (
@@ -33,9 +33,9 @@ const Feature = () => {
               href: "/features/waiting-for-you",
             },
             {
-              title: "Coming soon",
-              description: "A game-changing feature is on the way! 🎉",
-              href: "",
+              title: "No Tipsy No Home",
+              description: "ไม่เมากูไม่กลับ 🍻🏠",
+              href: "/features/no-tipsy-no-home",
             },
           ].map((feature, index) => (
             <Grid  key={index} size={{ xs: 12, md: 4 }}>

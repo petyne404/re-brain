@@ -166,7 +166,7 @@ export default function Navbar() {
               <Logo variant="h6">
                 <Link href="/">
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/logo/logo.svg"
                     width={200}
                     height={100}
                     alt="rebrain logo"
@@ -178,7 +178,7 @@ export default function Navbar() {
             <>
               <Logo variant="h6" sx={{ mr: 4 }}>
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/logo/logo.svg"
                   width={200}
                   height={100}
                   alt="rebrain logo"
